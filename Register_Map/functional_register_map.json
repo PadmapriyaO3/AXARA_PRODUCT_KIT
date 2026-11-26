@@ -1,0 +1,3072 @@
+{
+  "title": "Functional register map",
+  "table_no": 133,
+  "registers": [
+    {
+      "address": 0,
+      "name": "DEVICE_ID",
+      "access": "",
+      "default": "0111_0011",
+      "bits": [
+        "DEVICE_ID",
+        "DEVICE_ID",
+        "DEVICE_ID",
+        "DEVICE_ID",
+        "DEVICE_FAM",
+        "DEVICE_FAM",
+        "DEVICE_FAM",
+        "DEVICE_FAM"
+      ],
+      "fields": [
+        {
+          "name": "DEVICE_FAM",
+          "msb": 7,
+          "lsb": 4,
+          "width": 4
+        },
+        {
+          "name": "DEVICE_ID",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 1,
+      "name": "REV_ID",
+      "access": "",
+      "default": "0010_0001",
+      "bits": [
+        "METAL_LAYER_REV",
+        "METAL_LAYER_REV",
+        "METAL_LAYER_REV",
+        "METAL_LAYER_REV",
+        "FULL_LAYER_REV",
+        "FULL_LAYER_REV",
+        "FULL_LAYER_REV",
+        "FULL_LAYER_REV"
+      ],
+      "fields": [
+        {
+          "name": "FULL_LAYER_REV",
+          "msb": 7,
+          "lsb": 4,
+          "width": 4
+        },
+        {
+          "name": "METAL_LAYER_REV",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 2,
+      "name": "PROG_ID",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL",
+        "PROG_ID_ASIL"
+      ],
+      "fields": [
+        {
+          "name": "PROG_ID_ASIL",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 3,
+      "name": "PROG_ID_REV",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV",
+        "PROG_ID_REV"
+      ],
+      "fields": [
+        {
+          "name": "PROG_ID_REV",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 4,
+      "name": "INT_STATUS1",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VIN_OVLO_I",
+        "PGOOD_I",
+        "-",
+        "PWRDN_I",
+        "PWRUP_I",
+        "CRC_I",
+        "FREQ_RDY_I",
+        "SDWN_I"
+      ],
+      "fields": [
+        {
+          "name": "SDWN_I",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FREQ_RDY_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "CRC_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "PWRUP_I",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "PWRDN_I",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "PGOOD_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "VIN_OVLO_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 5,
+      "name": "INT_MASK1",
+      "access": "",
+      "default": "1111_1011",
+      "bits": [
+        "VIN_OVLO_M",
+        "PGOOD_M",
+        "-",
+        "PWRDN_M",
+        "PWRUP_M",
+        "CRC_M",
+        "FREQ_RDY_M",
+        "SDWN_M"
+      ],
+      "fields": [
+        {
+          "name": "SDWN_M",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FREQ_RDY_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "CRC_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "PWRUP_M",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "PWRDN_M",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "PGOOD_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "VIN_OVLO_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 6,
+      "name": "INT_SENSE1",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VIN_OVLO_S",
+        "PGOOD_S",
+        "-",
+        "-",
+        "PWRON_S",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "PWRON_S",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "PGOOD_S",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "VIN_OVLO_S",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 7,
+      "name": "INT_STATUS2",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "THERM_110_I",
+        "THERM_125_I",
+        "THERM_140_I",
+        "THERM_155_I",
+        "REGMAP_CRC_I",
+        "WD_INIT_I",
+        "WD_ERROR_I",
+        "WD_EVENT_I"
+      ],
+      "fields": [
+        {
+          "name": "WD_EVENT_I",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "WD_ERROR_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "WD_INIT_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "REGMAP_CRC_I",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "THERM_155_I",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "THERM_140_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "THERM_125_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "THERM_110_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 8,
+      "name": "INT_MASK2",
+      "access": "",
+      "default": "1111_1111",
+      "bits": [
+        "THERM_110_M",
+        "THERM_125_M",
+        "THERM_140_M",
+        "THERM_155_M",
+        "REGMAP_CRC_M",
+        "WD_INIT_M",
+        "WD_ERROR_M",
+        "WD_EVENT_M"
+      ],
+      "fields": [
+        {
+          "name": "WD_EVENT_M",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "WD_ERROR_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "WD_INIT_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "REGMAP_CRC_M",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "THERM_155_M",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "THERM_140_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "THERM_125_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "THERM_110_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 9,
+      "name": "INT_SENSE2",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "THERM_110_S",
+        "THERM_125_S",
+        "THERM_140_S",
+        "THERM_155_S",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "THERM_155_S",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "THERM_140_S",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "THERM_125_S",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "THERM_110_S",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 10,
+      "name": "INT_STATUS3",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "PG_SHORT_I",
+        "-",
+        "FCCU_I",
+        "RSTB_I",
+        "CLK_MON_I",
+        "FSYNC_FLT_I",
+        "FSYNC_I",
+        "BGMON_I"
+      ],
+      "fields": [
+        {
+          "name": "BGMON_I",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_FLT_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "CLK_MON_I",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "RSTB_I",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "FCCU_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "PG_SHORT_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 11,
+      "name": "INT_MASK3",
+      "access": "",
+      "default": "1111_0111",
+      "bits": [
+        "PG_SHORT_M",
+        "-",
+        "FCCU_M",
+        "-",
+        "CLK_MON_M",
+        "FSYNC_FLT_M",
+        "FSYNC_M",
+        "BGMON_M"
+      ],
+      "fields": [
+        {
+          "name": "BGMON_M",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_FLT_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "CLK_MON_M",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "FCCU_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "PG_SHORT_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 12,
+      "name": "INT_SENSE3",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "-",
+        "-",
+        "FCCU_S",
+        "RSTB_S",
+        "-",
+        "FSYNC_FLT_S",
+        "FSYNC_S",
+        "BGMON_S"
+      ],
+      "fields": [
+        {
+          "name": "BGMON_S",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_S",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_FLT_S",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "RSTB_S",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "FCCU_S",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 13,
+      "name": "SW_MODE_INT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_MODE_I",
+        "SW2_MODE_I",
+        "SW3_MODE_I",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW3_MODE_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_MODE_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_MODE_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 14,
+      "name": "SW_MODE_MASK",
+      "access": "",
+      "default": "0000_1111",
+      "bits": [
+        "SW1_MODE_M",
+        "SW2_MODE_M",
+        "SW3_MODE_M",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW3_MODE_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_MODE_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_MODE_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 15,
+      "name": "REG_ILIM_INT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_ILIM_I",
+        "SW2_ILIM_I",
+        "SW3_ILIM_I",
+        "-",
+        "-",
+        "LDO1_ILIM_I",
+        "LDO2_ILIM_I",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_ILIM_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_ILIM_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_ILIM_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_ILIM_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_ILIM_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 16,
+      "name": "REG_ILIM_MASK",
+      "access": "",
+      "default": "0111_1111",
+      "bits": [
+        "SW1_ILIM_M",
+        "SW2_ILIM_M",
+        "SW3_ILIM_M",
+        "-",
+        "-",
+        "LDO1_ILIM_M",
+        "LDO2_ILIM_M",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_ILIM_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_ILIM_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_ILIM_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_ILIM_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_ILIM_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 17,
+      "name": "REG_ILIM_SENSE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_ILIM_S",
+        "SW2_ILIM_S",
+        "SW3_ILIM_S",
+        "-",
+        "-",
+        "LDO1_ILIM_SRESERVED",
+        "LDO2_ILIM_S",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_ILIM_S",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_ILIM_SRESERVED",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_ILIM_S",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_ILIM_S",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_ILIM_S",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 18,
+      "name": "REG_UV_INT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_UV_I",
+        "SW2_UV_I",
+        "SW3_UV_I",
+        "-",
+        "-",
+        "LDO1_UV_I",
+        "LDO2_UV_I",
+        "VIN_UV_I"
+      ],
+      "fields": [
+        {
+          "name": "VIN_UV_I",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_UV_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_UV_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_UV_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_UV_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_UV_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 19,
+      "name": "REG_UV_MASK",
+      "access": "",
+      "default": "1111_1111",
+      "bits": [
+        "SW1_UV_M",
+        "SW2_UV_M",
+        "SW3_UV_M",
+        "-",
+        "-",
+        "LDO1_UV_M",
+        "LDO2_UV_M",
+        "VIN_UV_M"
+      ],
+      "fields": [
+        {
+          "name": "VIN_UV_M",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_UV_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_UV_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_UV_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_UV_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_UV_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 20,
+      "name": "REG_UV_SENSE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_UV_S",
+        "SW2_UV_S",
+        "SW3_UV_S",
+        "-",
+        "-",
+        "LDO1_UV_S",
+        "LDO2_UV_S",
+        "VIN_UV_S"
+      ],
+      "fields": [
+        {
+          "name": "VIN_UV_S",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_UV_S",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_UV_S",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_UV_S",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_UV_S",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_UV_S",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 21,
+      "name": "REG_OV_INT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_OV_I",
+        "SW2_OV_I",
+        "SW3_OV_I",
+        "-",
+        "-",
+        "LDO1_OV_I",
+        "LDO2_OV_I",
+        "VIN_OV_I"
+      ],
+      "fields": [
+        {
+          "name": "VIN_OV_I",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_OV_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_OV_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_OV_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_OV_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_OV_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 22,
+      "name": "REG_OV_MASK",
+      "access": "",
+      "default": "1111_1111",
+      "bits": [
+        "SW1_OV_M",
+        "SW2_OV_M",
+        "SW3_OV_M",
+        "-",
+        "-",
+        "LDO1_OV_M",
+        "LDO2_OV_M",
+        "VIN_OV_M"
+      ],
+      "fields": [
+        {
+          "name": "VIN_OV_M",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_OV_M",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_OV_M",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_OV_M",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_OV_M",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_OV_M",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 23,
+      "name": "REG_OV_SENSE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_OV_S",
+        "SW2_OV_S",
+        "SW3_OV_S",
+        "-",
+        "-",
+        "LDO1_OV_S",
+        "LDO2_OV_S",
+        "VIN_OV_S"
+      ],
+      "fields": [
+        {
+          "name": "VIN_OV_S",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_OV_S",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_OV_S",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_OV_S",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_OV_S",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1_OV_S",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 24,
+      "name": "SYS_INT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "STATUS1_I",
+        "STATUS2_I",
+        "MODE_I",
+        "ILIM_I",
+        "UV_I",
+        "OV_I",
+        "STATUS3_I",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "STATUS3_I",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OV_I",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "UV_I",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "ILIM_I",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "MODE_I",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "STATUS2_I",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "STATUS1_I",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 25,
+      "name": "HARDFAULT_FLAGS",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "TSD_FAIL",
+        "REG_FAIL",
+        "PG_FAIL",
+        "PU_FAIL",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "PU_FAIL",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "PG_FAIL",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "REG_FAIL",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "TSD_FAIL",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 27,
+      "name": "ABIST_CTRL",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "AB_RUN",
+        "AB_DONE",
+        "AB_FCCU_H",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "AB_FCCU_H",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "AB_DONE",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "AB_RUN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 28,
+      "name": "ABIST_OV1",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "AB_SW1_OV",
+        "AB_SW2_OV",
+        "AB_SW3_OV",
+        "-",
+        "-",
+        "AB_LDO1_OV",
+        "AB_LDO2_OV",
+        "AB_VIN_OV"
+      ],
+      "fields": [
+        {
+          "name": "AB_VIN_OV",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "AB_LDO2_OV",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "AB_LDO1_OV",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "AB_SW3_OV",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "AB_SW2_OV",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "AB_SW1_OV",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 29,
+      "name": "ABIST_UV1",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "AB_SW1_UV",
+        "AB_SW2_UV",
+        "AB_SW3_UV",
+        "-",
+        "-",
+        "AB_LDO1_UV",
+        "AB_LDO2_UV",
+        "AB_VIN_UV"
+      ],
+      "fields": [
+        {
+          "name": "AB_VIN_UV",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "AB_LDO2_UV",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "AB_LDO1_UV",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "AB_SW3_UV",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "AB_SW2_UV",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "AB_SW1_UV",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 30,
+      "name": "TEST_FLAGS",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_NOK",
+        "TRIM_NOK",
+        "STEST_NOK",
+        "RESERVED",
+        "RESERVED",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "RESERVED",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "RESERVED",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "STEST_NOK",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "TRIM_NOK",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_NOK",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 32,
+      "name": "RANDOM_GEN",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN",
+        "RANDOM_GEN"
+      ],
+      "fields": [
+        {
+          "name": "RANDOM_GEN",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 33,
+      "name": "RANDOM_CHK",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK",
+        "RANDOM_CHK"
+      ],
+      "fields": [
+        {
+          "name": "RANDOM_CHK",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 34,
+      "name": "VMONEN1",
+      "access": "",
+      "default": "0111_1111",
+      "bits": [
+        "SW1VMON_EN",
+        "SW2VMON_EN",
+        "SW3VMON_EN",
+        "-",
+        "-",
+        "LDO1VMON_EN",
+        "LDO2VMON_EN",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "LDO2VMON_EN",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1VMON_EN",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3VMON_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2VMON_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "SW1VMON_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 35,
+      "name": "CTRL1",
+      "access": "",
+      "default": "0001_0000",
+      "bits": [
+        "I2C_SECURE_EN",
+        "WD_EN",
+        "WD_STBY_EN",
+        "WD_SEL",
+        "TMP_MON_EN",
+        "SYNC_EN",
+        "VIN_OVLO_SDWN",
+        "VIN_OVLO_EN"
+      ],
+      "fields": [
+        {
+          "name": "VIN_OVLO_EN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "VIN_OVLO_SDWN",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "SYNC_EN",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "TMP_MON_EN",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "WD_SEL",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "WD_STBY_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "WD_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "I2C_SECURE_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 36,
+      "name": "CTRL2",
+      "access": "",
+      "default": "0001_0000",
+      "bits": [
+        "-",
+        "-",
+        "STANDBYINV",
+        "-",
+        "TMP_MON_AON",
+        "-",
+        "VIN_OVLO_DBNC",
+        "VIN_OVLO_DBNC"
+      ],
+      "fields": [
+        {
+          "name": "VIN_OVLO_DBNC",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "TMP_MON_AON",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "STANDBYINV",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 37,
+      "name": "CTRL3",
+      "access": "",
+      "default": "1010_0000",
+      "bits": [
+        "INTB_TEST",
+        "PMIC_OFF",
+        "ULP_OFF_CTRL",
+        "PGOOD_RLS",
+        "UV_DB",
+        "UV_DB",
+        "OV_DB",
+        "OV_DB"
+      ],
+      "fields": [
+        {
+          "name": "OV_DB",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "UV_DB",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "PGOOD_RLS",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "ULP_OFF_CTRL",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "PMIC_OFF",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "INTB_TEST",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 38,
+      "name": "PWRUP_CTRL",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SEQ_TBASE",
+        "SEQ_TBASE",
+        "PGOOD_SEQ",
+        "PGOOD_SEQ",
+        "PGOOD_SEQ",
+        "PGOOD_SEQ",
+        "PGOOD_SEQ",
+        "PGOOD_SEQ"
+      ],
+      "fields": [
+        {
+          "name": "PGOOD_SEQ",
+          "msb": 7,
+          "lsb": 2,
+          "width": 6
+        },
+        {
+          "name": "SEQ_TBASE",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 39,
+      "name": "FREQ_CTRL",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "CLK_FREQ",
+        "CLK_FREQ",
+        "CLK_FREQ",
+        "CLK_FREQ",
+        "FSS_FMOD",
+        "FSS_EN",
+        "FSYNC_RANGE",
+        "FSS_SEL"
+      ],
+      "fields": [
+        {
+          "name": "FSS_SEL",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "FSYNC_RANGE",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "FSS_EN",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "FSS_FMOD",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "CLK_FREQ",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 40,
+      "name": "GPO_CTRL",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "GPO_SEQ",
+        "GPO_SEQ",
+        "GPO_SEQ",
+        "GPO_SEQ",
+        "GPO_SEQ",
+        "GPO_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "GPO_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 41,
+      "name": "WD_CONFIG",
+      "access": "",
+      "default": "0110_0000",
+      "bits": [
+        "WD_DURATION",
+        "WD_DURATION",
+        "WD_DURATION",
+        "WD_DURATION",
+        "WDW_RECOVERY",
+        "WDW_RECOVERY",
+        "WDW_RECOVERY",
+        "WDW_RECOVERY"
+      ],
+      "fields": [
+        {
+          "name": "WDW_RECOVERY",
+          "msb": 7,
+          "lsb": 4,
+          "width": 4
+        },
+        {
+          "name": "WD_DURATION",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 42,
+      "name": "WD_ANSWER",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER",
+        "WD_ANSWER"
+      ],
+      "fields": [
+        {
+          "name": "WD_ANSWER",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 43,
+      "name": "WD_SEED",
+      "access": "",
+      "default": "0101_1011",
+      "bits": [
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED",
+        "WD_SEED"
+      ],
+      "fields": [
+        {
+          "name": "WD_SEED",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 44,
+      "name": "WD_ERROR",
+      "access": "",
+      "default": "0011_0000",
+      "bits": [
+        "WD_ERROR_CNT",
+        "WD_ERROR_CNT",
+        "WD_ERROR_CNT",
+        "WD_ERROR_CNT",
+        "WD_MAX_ERROR",
+        "WD_MAX_ERROR",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "WD_MAX_ERROR",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "WD_ERROR_CNT",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 45,
+      "name": "ASIL_CFG",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "FCCU_CFG",
+        "FCCU_CFG",
+        "FCCU_POL",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "FCCU_POL",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "FCCU_CFG",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 46,
+      "name": "FAULT_COUNTER",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "FAULT_CNT",
+        "FAULT_CNT",
+        "FAULT_CNT",
+        "FAULT_CNT",
+        "FAULT_MAX_CNT",
+        "FAULT_MAX_CNT",
+        "FAULT_MAX_CNT",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "FAULT_MAX_CNT",
+          "msb": 6,
+          "lsb": 4,
+          "width": 3
+        },
+        {
+          "name": "FAULT_CNT",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 47,
+      "name": "FSAFE_COUNTER",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "FS_BYPASS_CNT",
+        "FS_BYPASS_CNT",
+        "FS_BYPASS_CNT",
+        "FS_BYPASS_CNT",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "FS_BYPASS_CNT",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 48,
+      "name": "AMUX",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "AMUX_SEL",
+        "AMUX_SEL",
+        "AMUX_SEL",
+        "AMUX_SEL",
+        "AMUX_SEL",
+        "AMUX_EN",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "AMUX_EN",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "AMUX_SEL",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 49,
+      "name": "SW_RAMP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1DVS_RAMP",
+        "SW1DVS_RAMP",
+        "SW2DVS_RAMP",
+        "SW2DVS_RAMP",
+        "SW3DVS_RAMP",
+        "SW3DVS_RAMP",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW3DVS_RAMP",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "SW2DVS_RAMP",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "SW1DVS_RAMP",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 50,
+      "name": "SW1_CONFIG1",
+      "access": "",
+      "default": "0001_1100",
+      "bits": [
+        "SW1_PG_EN",
+        "-",
+        "SW1_ILIM_STATE",
+        "SW1_OV_STATE",
+        "SW1_UV_STATE",
+        "SW1_ILIM_BYPASS",
+        "SW1_OV_BYPASS",
+        "SW1_UV_BYPASS"
+      ],
+      "fields": [
+        {
+          "name": "SW1_UV_BYPASS",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW1_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "SW1_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW1_UV_STATE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "SW1_OV_STATE",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "SW1_ILIM_STATE",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW1_PG_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 51,
+      "name": "SW1_CONFIG2",
+      "access": "",
+      "default": "1000_0000",
+      "bits": [
+        "SW1PHASE",
+        "SW1PHASE",
+        "SW1PHASE",
+        "SW1ILIM",
+        "SW1ILIM",
+        "-",
+        "-",
+        "SW1_FLT_REN"
+      ],
+      "fields": [
+        {
+          "name": "SW1_FLT_REN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW1ILIM",
+          "msb": 4,
+          "lsb": 3,
+          "width": 2
+        },
+        {
+          "name": "SW1PHASE",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 52,
+      "name": "SW1_PWRUP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_SEQ",
+        "SW1_SEQ",
+        "SW1_SEQ",
+        "SW1_SEQ",
+        "SW1_SEQ",
+        "SW1_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW1_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 53,
+      "name": "SW1_MODE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW1_RUN_MODE",
+        "SW1_RUN_MODE",
+        "SW1_STBY_MODE",
+        "SW1_STBY_MODE",
+        "SW1_UV_TH",
+        "SW1_UV_TH",
+        "SW1_OV_TH",
+        "SW1_OV_TH"
+      ],
+      "fields": [
+        {
+          "name": "SW1_OV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "SW1_UV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "SW1_STBY_MODE",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "SW1_RUN_MODE",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 54,
+      "name": "SW1_RUN_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN",
+        "VSW1_RUN"
+      ],
+      "fields": [
+        {
+          "name": "VSW1_RUN",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 55,
+      "name": "SW1_STBY_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY",
+        "VSW1_STBY"
+      ],
+      "fields": [
+        {
+          "name": "VSW1_STBY",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 57,
+      "name": "SW2_CONFIG1",
+      "access": "",
+      "default": "0001_1100",
+      "bits": [
+        "SW2_PG_EN",
+        "-",
+        "SW2_ILIM_STATE",
+        "SW2_OV_STATE",
+        "SW2_UV_STATE",
+        "SW2_ILIM_BYPASS",
+        "SW2_OV_BYPASS",
+        "SW2_UV_BYPASS"
+      ],
+      "fields": [
+        {
+          "name": "SW2_UV_BYPASS",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW2_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "SW2_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW2_UV_STATE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "SW2_OV_STATE",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "SW2_ILIM_STATE",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW2_PG_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 58,
+      "name": "SW2_CONFIG2",
+      "access": "",
+      "default": "1000_0000",
+      "bits": [
+        "SW2PHASE",
+        "SW2PHASE",
+        "SW2PHASE",
+        "SW2ILIM",
+        "SW2ILIM",
+        "-",
+        "-",
+        "SW2_FLT_REN"
+      ],
+      "fields": [
+        {
+          "name": "SW2_FLT_REN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW2ILIM",
+          "msb": 4,
+          "lsb": 3,
+          "width": 2
+        },
+        {
+          "name": "SW2PHASE",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 59,
+      "name": "SW2_PWRUP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW2_SEQ",
+        "SW2_SEQ",
+        "SW2_SEQ",
+        "SW2_SEQ",
+        "SW2_SEQ",
+        "SW2_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW2_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 60,
+      "name": "SW2_MODE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW2_RUN_MODE",
+        "SW2_RUN_MODE",
+        "SW2_STBY_MODE",
+        "SW2_STBY_MODE",
+        "SW2_UV_TH",
+        "SW2_UV_TH",
+        "SW2_OV_TH",
+        "SW2_OV_TH"
+      ],
+      "fields": [
+        {
+          "name": "SW2_OV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "SW2_UV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "SW2_STBY_MODE",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "SW2_RUN_MODE",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 61,
+      "name": "SW2_RUN_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN",
+        "VSW2_RUN"
+      ],
+      "fields": [
+        {
+          "name": "VSW2_RUN",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 62,
+      "name": "SW2_STBY_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY",
+        "VSW2_STBY"
+      ],
+      "fields": [
+        {
+          "name": "VSW2_STBY",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 64,
+      "name": "SW3_CONFIG1",
+      "access": "",
+      "default": "0001_1100",
+      "bits": [
+        "SW3_PG_EN",
+        "-",
+        "SW3_ILIM_STATE",
+        "SW3_OV_STATE",
+        "SW3_UV_STATE",
+        "SW3_ILIM_BYPASS",
+        "SW3_OV_BYPASS",
+        "SW3_UV_BYPASS"
+      ],
+      "fields": [
+        {
+          "name": "SW3_UV_BYPASS",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW3_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "SW3_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "SW3_UV_STATE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "SW3_OV_STATE",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "SW3_ILIM_STATE",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "SW3_PG_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 65,
+      "name": "SW3_CONFIG2",
+      "access": "",
+      "default": "1000_0000",
+      "bits": [
+        "SW3PHASE",
+        "SW3PHASE",
+        "SW3PHASE",
+        "SW3ILIM",
+        "SW3ILIM",
+        "-",
+        "-",
+        "SW3_FLT_REN"
+      ],
+      "fields": [
+        {
+          "name": "SW3_FLT_REN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "SW3ILIM",
+          "msb": 4,
+          "lsb": 3,
+          "width": 2
+        },
+        {
+          "name": "SW3PHASE",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 66,
+      "name": "SW3_PWRUP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW3_SEQ",
+        "SW3_SEQ",
+        "SW3_SEQ",
+        "SW3_SEQ",
+        "SW3_SEQ",
+        "SW3_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "SW3_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 67,
+      "name": "SW3_MODE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "SW3_RUN_MODE",
+        "SW3_RUN_MODE",
+        "SW3_STBY_MODE",
+        "SW3_STBY_MODE",
+        "SW3_UV_TH",
+        "SW3_UV_TH",
+        "SW3_OV_TH",
+        "SW3_OV_TH"
+      ],
+      "fields": [
+        {
+          "name": "SW3_OV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "SW3_UV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "SW3_STBY_MODE",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "SW3_RUN_MODE",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 68,
+      "name": "SW3_RUN_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN",
+        "VSW3_RUN"
+      ],
+      "fields": [
+        {
+          "name": "VSW3_RUN",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 69,
+      "name": "SW3_STBY_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY",
+        "VSW3_STBY"
+      ],
+      "fields": [
+        {
+          "name": "VSW3_STBY",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 85,
+      "name": "LDO1_CONFIG1",
+      "access": "",
+      "default": "0001_1100",
+      "bits": [
+        "LDO1_PG_EN",
+        "-",
+        "LDO1_ILIM_STATE",
+        "LDO1_OV_STATE",
+        "LDO1_UV_STATE",
+        "LDO1_ILIM_BYPASS",
+        "LDO1_OV_BYPASS",
+        "LDO1_UV_BYPASS"
+      ],
+      "fields": [
+        {
+          "name": "LDO1_UV_BYPASS",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO1_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO1_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "LDO1_UV_STATE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "LDO1_OV_STATE",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "LDO1_ILIM_STATE",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "LDO1_PG_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 86,
+      "name": "LDO1_CONFIG2",
+      "access": "",
+      "default": "1000_0000",
+      "bits": [
+        "LDO1_STBY_EN",
+        "LDO1_RUN_EN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "LDO1_FLT_REN"
+      ],
+      "fields": [
+        {
+          "name": "LDO1_FLT_REN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO1_RUN_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "LDO1_STBY_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 87,
+      "name": "LDO1_PWRUP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "LDO1_SEQ",
+        "LDO1_SEQ",
+        "LDO1_SEQ",
+        "LDO1_SEQ",
+        "LDO1_SEQ",
+        "LDO1_SEQ",
+        "-",
+        "LDO1_RAMP"
+      ],
+      "fields": [
+        {
+          "name": "LDO1_RAMP",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO1_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 88,
+      "name": "LDO1_RUN_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VLDO1_RUN",
+        "VLDO1_RUN",
+        "VLDO1_RUN",
+        "VLDO1_RUN",
+        "VLDO1_RUN",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "VLDO1_RUN",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 89,
+      "name": "LDO1_STBY_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VLDO1_STBY",
+        "VLDO1_STBY",
+        "VLDO1_STBY",
+        "VLDO1_STBY",
+        "VLDO1_STBY",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "VLDO1_STBY",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 91,
+      "name": "LDO2_CONFIG1",
+      "access": "",
+      "default": "0001_1100",
+      "bits": [
+        "LDO2_PG_EN",
+        "-",
+        "LDO2_ILIM_STATE",
+        "LDO2_OV_STATE",
+        "LDO2_UV_STATE",
+        "LDO2_ILIM_BYPASS",
+        "LDO2_OV_BYPASS",
+        "LDO2_UV_BYPASS"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_UV_BYPASS",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "LDO2_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "LDO2_UV_STATE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "LDO2_OV_STATE",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "LDO2_ILIM_STATE",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "LDO2_PG_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 92,
+      "name": "LDO2_CONFIG2",
+      "access": "",
+      "default": "1000_0000",
+      "bits": [
+        "LDO2_STBY_EN",
+        "LDO2_RUN_EN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "LDO2_FLT_REN"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_FLT_REN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_RUN_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "LDO2_STBY_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 93,
+      "name": "LDO2_PWRUP",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "LDO2_SEQ",
+        "LDO2_SEQ",
+        "LDO2_SEQ",
+        "LDO2_SEQ",
+        "LDO2_SEQ",
+        "LDO2_SEQ",
+        "-",
+        "LDO2_RAMP"
+      ],
+      "fields": [
+        {
+          "name": "LDO2_RAMP",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "LDO2_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 94,
+      "name": "LDO2_RUN_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VLDO2_RUN",
+        "VLDO2_RUN",
+        "VLDO2_RUN",
+        "VLDO2_RUN",
+        "VLDO2_RUN",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "VLDO2_RUN",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 95,
+      "name": "LDO2_STBY_VOLT",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "VLDO2_STBY",
+        "VLDO2_STBY",
+        "VLDO2_STBY",
+        "VLDO2_STBY",
+        "VLDO2_STBY",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "VLDO2_STBY",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 96,
+      "name": "STATE",
+      "access": "",
+      "default": "0000_0000",
+      "bits": [
+        "STATE",
+        "STATE",
+        "STATE",
+        "STATE",
+        "STATE",
+        "DBG_MODE",
+        "CUST_TM",
+        "NXP_TM"
+      ],
+      "fields": [
+        {
+          "name": "NXP_TM",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "CUST_TM",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "DBG_MODE",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "STATE",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    }
+  ]
+}

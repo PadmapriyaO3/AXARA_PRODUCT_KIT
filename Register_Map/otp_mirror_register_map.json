@@ -1,0 +1,1458 @@
+{
+  "title": "OTP mirror register map",
+  "table_no": 74,
+  "registers": [
+    {
+      "address": 63,
+      "name": "OTP_I2C",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_I2C_ADD",
+        "OTP_I2C_ADD",
+        "OTP_I2C_ADD",
+        "OTP_I2C_CRC_EN",
+        "OTP_I2C_SECURE_EN",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_I2C_SECURE_EN",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "OTP_I2C_CRC_EN",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_I2C_ADD",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 64,
+      "name": "OTP_CTRL1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_XFAILB_EN",
+        "OTP_INTB_RSTB",
+        "OTP_STANDBYINV",
+        "OTP_LP_STBY",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LP_STBY",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_STANDBYINV",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_INTB_RSTB",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_XFAILB_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 65,
+      "name": "OTP_CTRL2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VIN_OVLO_DBNC",
+        "OTP_VIN_OVLO_DBNC",
+        "OTP_VIN_OVLO_EN",
+        "OTP_VIN_OVLO_SDWN",
+        "OTP_VINOV_TH",
+        "OTP_VINOV_TH",
+        "OTP_VINUV_TH",
+        "OTP_VINUV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VINUV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_VINOV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_VIN_OVLO_SDWN",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_VIN_OVLO_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_VIN_OVLO_DBNC",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 66,
+      "name": "OTP_CTRL3",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1CONFIG",
+        "OTP_SW1CONFIG",
+        "-",
+        "-",
+        "OTP_PD_SEQ_DLY",
+        "OTP_PD_SEQ_DLY",
+        "OTP_PD_SEQ_DLY",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_PD_SEQ_DLY",
+          "msb": 6,
+          "lsb": 4,
+          "width": 3
+        },
+        {
+          "name": "OTP_SW1CONFIG",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 67,
+      "name": "OTP_FREQ_CTRL1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_CLK_FREQ",
+        "OTP_CLK_FREQ",
+        "OTP_CLK_FREQ",
+        "OTP_CLK_FREQ",
+        "OTP_FSYNC_RANGE",
+        "-",
+        "OTP_SYNC_EN",
+        "OTP_SW_MODE"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW_MODE",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "OTP_SYNC_EN",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_FSYNC_RANGE",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "OTP_CLK_FREQ",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 68,
+      "name": "OTP_FREQ_CTRL2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_CLK_DIV1",
+        "OTP_CLK_DIV1",
+        "OTP_CLK_DIV2",
+        "OTP_CLK_DIV2",
+        "-",
+        "OTP_FSS_SEL",
+        "OTP_FSS_FMOD",
+        "OTP_FSS_EN"
+      ],
+      "fields": [
+        {
+          "name": "OTP_FSS_EN",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "OTP_FSS_FMOD",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_FSS_SEL",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "OTP_CLK_DIV2",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "OTP_CLK_DIV1",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 69,
+      "name": "OTP_WD_CONFIG",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_WDWINDOW",
+        "OTP_WD_SEL",
+        "OTP_WD_STBY_EN",
+        "OTP_WD_EN",
+        "OTP_WD_DURATION",
+        "OTP_WD_DURATION",
+        "OTP_WD_DURATION",
+        "OTP_WD_DURATION"
+      ],
+      "fields": [
+        {
+          "name": "OTP_WD_DURATION",
+          "msb": 7,
+          "lsb": 4,
+          "width": 4
+        },
+        {
+          "name": "OTP_WD_EN",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_WD_STBY_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_WD_SEL",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_WDWINDOW",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 70,
+      "name": "OTP_WD_FLT_EXPIRE",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_WD_MAX_ERROR",
+        "OTP_WD_MAX_ERROR",
+        "-",
+        "-",
+        "OTP_FAULT_MAX_CNT",
+        "OTP_FAULT_MAX_CNT",
+        "OTP_FAULT_MAX_CNT",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_FAULT_MAX_CNT",
+          "msb": 6,
+          "lsb": 4,
+          "width": 3
+        },
+        {
+          "name": "OTP_WD_MAX_ERROR",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 71,
+      "name": "OTP_PWRUP_CTRL",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SEQ_TBASE",
+        "OTP_SEQ_TBASE",
+        "OTP_PGOOD_SEQ",
+        "OTP_PGOOD_SEQ",
+        "OTP_PGOOD_SEQ",
+        "OTP_PGOOD_SEQ",
+        "OTP_PGOOD_SEQ",
+        "OTP_PGOOD_SEQ"
+      ],
+      "fields": [
+        {
+          "name": "OTP_PGOOD_SEQ",
+          "msb": 7,
+          "lsb": 2,
+          "width": 6
+        },
+        {
+          "name": "OTP_SEQ_TBASE",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 72,
+      "name": "OTP_FSO_GPO_CTRL",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "-",
+        "-",
+        "OTP_GPO_SEQ",
+        "OTP_GPO_SEQ",
+        "OTP_GPO_SEQ",
+        "OTP_GPO_SEQ",
+        "OTP_GPO_SEQ",
+        "OTP_GPO_SEQ"
+      ],
+      "fields": [
+        {
+          "name": "OTP_GPO_SEQ",
+          "msb": 7,
+          "lsb": 2,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 73,
+      "name": "OTP_SW1_VOLT",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1",
+        "OTP_VSW1"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VSW1",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 74,
+      "name": "OTP_SW1_PWRUP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_SEQ",
+        "OTP_SW1_SEQ",
+        "OTP_SW1_SEQ",
+        "OTP_SW1_SEQ",
+        "OTP_SW1_SEQ",
+        "OTP_SW1_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW1_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 75,
+      "name": "OTP_SW1_CONFIG1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1ILIM",
+        "OTP_SW1ILIM",
+        "-",
+        "-",
+        "OTP_SW1_OV_TH",
+        "OTP_SW1_OV_TH",
+        "OTP_SW1_UV_TH",
+        "OTP_SW1_UV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW1_UV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1_OV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1ILIM",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 76,
+      "name": "OTP_SW1_CONFIG2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_CLK",
+        "OTP_SW1_PG_EN",
+        "OTP_SW1_STBY_EN",
+        "OTP_SW1PHASE",
+        "OTP_SW1PHASE",
+        "OTP_SW1PHASE",
+        "OTP_SW1_LSELECT",
+        "OTP_SW1_LSELECT"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW1_LSELECT",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1PHASE",
+          "msb": 5,
+          "lsb": 3,
+          "width": 3
+        },
+        {
+          "name": "OTP_SW1_STBY_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW1_PG_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW1_CLK",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 77,
+      "name": "OTP_SW2_VOLT",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2",
+        "OTP_VSW2"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VSW2",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 78,
+      "name": "OTP_SW2_PWRUP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW2_SEQ",
+        "OTP_SW2_SEQ",
+        "OTP_SW2_SEQ",
+        "OTP_SW2_SEQ",
+        "OTP_SW2_SEQ",
+        "OTP_SW2_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW2_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 79,
+      "name": "OTP_SW2_CONFIG1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW2ILIM",
+        "OTP_SW2ILIM",
+        "-",
+        "-",
+        "OTP_SW2_OV_TH",
+        "OTP_SW2_OV_TH",
+        "OTP_SW2_UV_TH",
+        "OTP_SW2_UV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW2_UV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW2_OV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW2ILIM",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 80,
+      "name": "OTP_SW2_CONFIG2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW2_CLK",
+        "OTP_SW2_PG_EN",
+        "OTP_SW2_STBY_EN",
+        "OTP_SW2PHASE",
+        "OTP_SW2PHASE",
+        "OTP_SW2PHASE",
+        "OTP_SW2_LSELECT",
+        "OTP_SW2_LSELECT"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW2_LSELECT",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW2PHASE",
+          "msb": 5,
+          "lsb": 3,
+          "width": 3
+        },
+        {
+          "name": "OTP_SW2_STBY_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW2_PG_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW2_CLK",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 81,
+      "name": "OTP_SW3_VOLT",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3",
+        "OTP_VSW3"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VSW3",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 82,
+      "name": "OTP_SW3_PWRUP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW3_SEQ",
+        "OTP_SW3_SEQ",
+        "OTP_SW3_SEQ",
+        "OTP_SW3_SEQ",
+        "OTP_SW3_SEQ",
+        "OTP_SW3_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 83,
+      "name": "OTP_SW3_CONFIG1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW3ILIM",
+        "OTP_SW3ILIM",
+        "-",
+        "-",
+        "OTP_SW3_OV_TH",
+        "OTP_SW3_OV_TH",
+        "OTP_SW3_UV_TH",
+        "OTP_SW3_UV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3_UV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW3_OV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW3ILIM",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 84,
+      "name": "OTP_SW3_CONFIG2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW3_CLK",
+        "OTP_SW3_PG_EN",
+        "OTP_SW3_STBY_EN",
+        "OTP_SW3PHASE",
+        "OTP_SW3PHASE",
+        "OTP_SW3PHASE",
+        "OTP_SW3_LSELECT",
+        "OTP_SW3_LSELECT"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3_LSELECT",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW3PHASE",
+          "msb": 5,
+          "lsb": 3,
+          "width": 3
+        },
+        {
+          "name": "OTP_SW3_STBY_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW3_PG_EN",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW3_CLK",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 93,
+      "name": "OTP_LDO1_VOLT",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VLDO1",
+        "OTP_VLDO1",
+        "OTP_VLDO1",
+        "OTP_VLDO1",
+        "OTP_VLDO1",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VLDO1",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 94,
+      "name": "OTP_LDO1_PWRUP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_LDO1_SEQ",
+        "OTP_LDO1_SEQ",
+        "OTP_LDO1_SEQ",
+        "OTP_LDO1_SEQ",
+        "OTP_LDO1_SEQ",
+        "OTP_LDO1_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO1_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 95,
+      "name": "OTP_LDO1_CONFIG",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_LDO1LS",
+        "OTP_LDO1_RAMP",
+        "OTP_LDO1_PG_EN",
+        "OTP_LDO1_STBY_EN",
+        "OTP_LDO1OV_TH",
+        "OTP_LDO1OV_TH",
+        "OTP_LDO1UV_TH",
+        "OTP_LDO1UV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO1UV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_LDO1OV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_LDO1_STBY_EN",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1_PG_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1_RAMP",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1LS",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 96,
+      "name": "OTP_LDO2_VOLT",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_VLDO2",
+        "OTP_VLDO2",
+        "OTP_VLDO2",
+        "OTP_VLDO2",
+        "OTP_VLDO2",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_VLDO2",
+          "msb": 4,
+          "lsb": 0,
+          "width": 5
+        }
+      ]
+    },
+    {
+      "address": 97,
+      "name": "OTP_LDO2_PWRUP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_LDO2_SEQ",
+        "OTP_LDO2_SEQ",
+        "OTP_LDO2_SEQ",
+        "OTP_LDO2_SEQ",
+        "OTP_LDO2_SEQ",
+        "OTP_LDO2_SEQ",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO2_SEQ",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 98,
+      "name": "OTP_LDO2_CONFIG",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_LDO2LS",
+        "OTP_LDO2_RAMP",
+        "OTP_LDO2_PG_EN",
+        "OTP_LDO2_STBY_EN",
+        "OTP_LDO2OV_TH",
+        "OTP_LDO2OV_TH",
+        "OTP_LDO2UV_TH",
+        "OTP_LDO2UV_TH"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO2UV_TH",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_LDO2OV_TH",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_LDO2_STBY_EN",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO2_PG_EN",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO2_RAMP",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO2LS",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 99,
+      "name": "OTP_OV_BYPASS",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_OV_BYPASS",
+        "OTP_SW2_OV_BYPASS",
+        "OTP_SW3_OV_BYPASS",
+        "-",
+        "-",
+        "OTP_LDO1_OV_BYPASS",
+        "OTP_LDO2_OV_BYPASS",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO2_OV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1_OV_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW3_OV_BYPASS",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW2_OV_BYPASS",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW1_OV_BYPASS",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 100,
+      "name": "OTP_UV_BYPASS",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_UV_BYPASS",
+        "OTP_SW2_UV_BYPASS",
+        "OTP_SW3_UV_BYPASS",
+        "-",
+        "-",
+        "OTP_LDO1_UV_BYPASS",
+        "OTP_LDO2_UV_BYPASS",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO2_UV_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1_UV_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW3_UV_BYPASS",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW2_UV_BYPASS",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW1_UV_BYPASS",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 101,
+      "name": "OTP_ILIM_BYPASS",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_ILIM_BYPASS",
+        "OTP_SW2_ILIM_BYPASS",
+        "OTP_SW3_ILIM_BYPASS",
+        "-",
+        "-",
+        "OTP_LDO1_ILIM_BYPASS",
+        "OTP_LDO2_ILIM_BYPASS",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_LDO2_ILIM_BYPASS",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDO1_ILIM_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW3_ILIM_BYPASS",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW2_ILIM_BYPASS",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_SW1_ILIM_BYPASS",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 102,
+      "name": "OTP_ID_2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_ID_H",
+        "OTP_ID_H",
+        "OTP_ID_H",
+        "OTP_ID_H",
+        "OTP_ID_REV",
+        "OTP_ID_REV",
+        "OTP_ID_REV",
+        "OTP_ID_REV"
+      ],
+      "fields": [
+        {
+          "name": "OTP_ID_REV",
+          "msb": 7,
+          "lsb": 4,
+          "width": 4
+        },
+        {
+          "name": "OTP_ID_H",
+          "msb": 3,
+          "lsb": 0,
+          "width": 4
+        }
+      ]
+    },
+    {
+      "address": 103,
+      "name": "OTP_ID_1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_ID_L",
+        "OTP_ID_L",
+        "OTP_ID_L",
+        "OTP_ID_L",
+        "OTP_ID_L",
+        "OTP_ID_L",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_ID_L",
+          "msb": 5,
+          "lsb": 0,
+          "width": 6
+        }
+      ]
+    },
+    {
+      "address": 104,
+      "name": "OTP_SW_COMP1",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_GM_COMP",
+        "OTP_SW1_GM_COMP",
+        "OTP_SW1_GM_COMP",
+        "OTP_SW2_GM_COMP",
+        "OTP_SW2_GM_COMP",
+        "OTP_SW2_GM_COMP",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW2_GM_COMP",
+          "msb": 5,
+          "lsb": 3,
+          "width": 3
+        },
+        {
+          "name": "OTP_SW1_GM_COMP",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 105,
+      "name": "OTP_SW_COMP2",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW3_GM_COMP",
+        "OTP_SW3_GM_COMP",
+        "OTP_SW3_GM_COMP",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3_GM_COMP",
+          "msb": 2,
+          "lsb": 0,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "address": 106,
+      "name": "OTP_SW_COMP3",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1_R_COMP",
+        "OTP_SW1_R_COMP",
+        "OTP_SW1_C_COMP",
+        "OTP_SW1_C_COMP",
+        "OTP_SW2_R_COMP",
+        "OTP_SW2_R_COMP",
+        "OTP_SW2_C_COMP",
+        "OTP_SW2_C_COMP"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW2_C_COMP",
+          "msb": 7,
+          "lsb": 6,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW2_R_COMP",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1_C_COMP",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1_R_COMP",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 107,
+      "name": "OTP_SW_COMP4",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW3_R_COMP",
+        "OTP_SW3_R_COMP",
+        "OTP_SW3_C_COMP",
+        "OTP_SW3_C_COMP",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3_C_COMP",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW3_R_COMP",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 108,
+      "name": "OTP_SW_RAMP",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_SW1DVS_RAMP",
+        "OTP_SW1DVS_RAMP",
+        "OTP_SW2DVS_RAMP",
+        "OTP_SW2DVS_RAMP",
+        "OTP_SW3DVS_RAMP",
+        "OTP_SW3DVS_RAMP",
+        "-",
+        "-"
+      ],
+      "fields": [
+        {
+          "name": "OTP_SW3DVS_RAMP",
+          "msb": 5,
+          "lsb": 4,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW2DVS_RAMP",
+          "msb": 3,
+          "lsb": 2,
+          "width": 2
+        },
+        {
+          "name": "OTP_SW1DVS_RAMP",
+          "msb": 1,
+          "lsb": 0,
+          "width": 2
+        }
+      ]
+    },
+    {
+      "address": 109,
+      "name": "OTP_ASIL_CONFIG",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_FCCU_EN",
+        "OTP_WD_FAULT_REC",
+        "OTP_SYNC_STBY",
+        "OTP_FS_BYPASS",
+        "OTP_FS_BYPASS_CNT",
+        "OTP_BGMON_BYPASS",
+        "OTP_LDOxOUT_OPEN",
+        "OTP_BGMON_SEL"
+      ],
+      "fields": [
+        {
+          "name": "OTP_BGMON_SEL",
+          "msb": 7,
+          "lsb": 7,
+          "width": 1
+        },
+        {
+          "name": "OTP_LDOxOUT_OPEN",
+          "msb": 6,
+          "lsb": 6,
+          "width": 1
+        },
+        {
+          "name": "OTP_BGMON_BYPASS",
+          "msb": 5,
+          "lsb": 5,
+          "width": 1
+        },
+        {
+          "name": "OTP_FS_BYPASS_CNT",
+          "msb": 4,
+          "lsb": 4,
+          "width": 1
+        },
+        {
+          "name": "OTP_FS_BYPASS",
+          "msb": 3,
+          "lsb": 3,
+          "width": 1
+        },
+        {
+          "name": "OTP_SYNC_STBY",
+          "msb": 2,
+          "lsb": 2,
+          "width": 1
+        },
+        {
+          "name": "OTP_WD_FAULT_REC",
+          "msb": 1,
+          "lsb": 1,
+          "width": 1
+        },
+        {
+          "name": "OTP_FCCU_EN",
+          "msb": 0,
+          "lsb": 0,
+          "width": 1
+        }
+      ]
+    },
+    {
+      "address": 110,
+      "name": "OTP_S2_CRC_LSB",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB",
+        "OTP_S2_CRC_LSB"
+      ],
+      "fields": [
+        {
+          "name": "OTP_S2_CRC_LSB",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "address": 111,
+      "name": "OTP_S2_CRC_MSB",
+      "access": "RW",
+      "default": "0000_0000",
+      "bits": [
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB",
+        "OTP_S2_CRC_MSB"
+      ],
+      "fields": [
+        {
+          "name": "OTP_S2_CRC_MSB",
+          "msb": 7,
+          "lsb": 0,
+          "width": 8
+        }
+      ]
+    }
+  ]
+}
